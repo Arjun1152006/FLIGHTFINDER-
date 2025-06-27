@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SB Flights</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <div class="logo">SB Flights</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="overlay">
+      <h1>Embark on an<br><span>Extraordinary Flight</span><br>Booking Adventure!</h1>
+      <p>Unleash your travel desires and book extraordinary flight journeys that will transport you to unforgettable destinations.</p>
+      
+      <form class="booking-form">
+        <label><input type="checkbox" /> Return journey</label>
+        <select>
+          <option selected disabled>Departure City</option>
+          <option>Mumbai</option>
+          <option>Delhi</option>
+          <option>Hydrabad</option>
+          <option>Gannavarem</option>
+          <option>Varanasi</option>
+          <option>Delhi</option>
+        </select>
+        <select>
+          <option selected disabled>Destination City</option>
+          <option>Mumbai</option>
+          <option>Jaipur</option>
+          <option>Hydrabad</option>
+          <option>Varanasi</option>
+          <option>Pune</option>
+          <option>Delhi</option>
+          
+        </select>
+        <input type="date" />
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
+
+
+<div id="flight-results" style="margin-top: 30px;">
+    <h3>Available Flights</h3>
+    <div class="flight-card">
+        <p><strong>Flight:</strong> SB123</p>
+        <p><strong>From:</strong>Hyderabad</p>
+        <p><strong>To:</strong> Jaipur</p>
+        <p><strong>Date:</strong> 15-07-2025</p>
+        <p><strong>Time:</strong> 10:00 AM</p>
+        <p><strong>Price:</strong> $499</p>
+        <button>Book Now</button>
+    </div>
+    <div class="flight-card">
+        <p><strong>Flight:</strong> SB456</p>
+        <p><strong>From:</strong>Gannavrem</p>
+        <p><strong>To:</strong>Mumabi</p>
+        <p><strong>Date:</strong> 15-07-2025</p>
+        <p><strong>Time:</strong> 3:00 PM</p>
+        <p><strong>Price:</strong> $520</p>
+        <button>Book Now</button>
+    </div>
+</div>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Add New Flight - SB Flights (Operator)</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+    }
+
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+    }
+
+    .form-container {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #004080;
+    }
+
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    form input, form select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .full-width {
+      grid-column: span 2;
+    }
+
+    .submit-btn {
+      grid-column: span 2;
+      text-align: center;
+    }
+
+    .submit-btn button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 30px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .submit-btn button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SB Flights (Operator)</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="bookings.">Bookings</a>
+      <a href="flights.html">Flights</a>
+      <a href="addflight.html">Add Flight</a>
+      <a href="logout.html">Logout</a>
+    </nav>
+  </header>
+
+  <div class="form-container">
+    <h2>Add new Flight</h2>
+    <form>
+      <input type="text" placeholder="Flight Name" value="Indigo" required />
+      <input type="text" placeholder="Flight Id" required />
+
+      <select required>
+        <option value="">Departure City</option>
+        <option>New York</option>
+        <option>London</option>
+        <option>Delhi</option>
+      </select>
+      <input type="time" required placeholder="Departure Time" />
+
+      <select required>
+        <option value="">Destination City</option>
+        <option>New York</option>
+        <option>London</option>
+        <option>Delhi</option>
+      </select>
+      <input type="time" required placeholder="Arrival Time" />
+
+      <input type="number" placeholder="Total seats" min="1" class="full-width" required />
+      <input type="number" placeholder="Base price" min="0" class="full-width" required />
+
+      <div class="submit-btn">
+        <button type="submit">Add now</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

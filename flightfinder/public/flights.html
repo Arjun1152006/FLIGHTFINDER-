@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SB Flights (Operator)</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+    }
+
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+    }
+
+    .container {
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      width: 180px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .card p {
+      font-size: 22px;
+      margin: 10px 0;
+      font-weight: bold;
+    }
+
+    .card small {
+      color: #666;
+    }
+
+    .card button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .card button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SB Flights (Operator)</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="addflight.html">Add Flight</a>
+      <a href="logout.html">Logout</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h3>Bookings</h3>
+      <p>4</p>
+      <button>View all</button>
+    </div>
+    <div class="card">
+      <h3>Flights</h3>
+      <p>2</p>
+      <button>View all</button>
+    </div>
+    <div class="card">
+      <h3>New Flight</h3>
+      <small>(new route)</small>
+      <br><br>
+      <button>Add now</button>
+    </div>
+  </div>
+
+</body>
+</html>
